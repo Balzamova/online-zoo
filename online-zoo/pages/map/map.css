@@ -1,0 +1,366 @@
+/* Zeroing of all auto styles */
+* { margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*, *:before,*:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+body {
+	width: 100%;
+	min-height: 100%;
+}
+h1 {
+	opacity: 0;
+	margin: 0 0 0 -999px;
+	width: 0;
+	height: 0;
+}
+
+/* -------------------- */ 
+.header {
+	margin: 0 auto;
+	height: 0; 
+/*	z-index: 50; 	*/
+}
+
+.header .wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: #F58021; 
+}
+
+.header__content {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	width: 100%;
+}
+
+.header__burger {
+	display: none;
+}
+
+.logo {
+	width: 96px;
+	height: 50px;
+	margin: 30px 0;
+}
+
+.header__menu {
+	margin: 0 65px 0 35%; /*при адаптиве менять или придумать другой метод */
+}
+.header__list {
+	display: flex;
+}
+.header__item {
+	margin: 0 24px;
+}
+.header__item:first-child {
+	margin-left: 0;
+}
+.header__item:last-child {
+	margin-right: 0;
+}
+
+.text__link {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: #000000;
+}
+.text__link:hover {
+	border-bottom: 2px solid #000000;
+}
+
+.header__item_active {
+	color: #00A092;
+	cursor: default;
+}
+.header__item_active:hover {
+	border-bottom: none;
+}
+
+.icon__list {
+	display: flex;
+}
+.icon__item {
+	margin: 0 15px;
+	transition: all 0.5s ease-in-out;
+}
+.icon__item:first-child {
+	margin-left: 0;
+}
+.icon__item:last-child {
+	margin-right: 0;
+}
+.icon__item:hover {
+	cursor: pointer;
+	transform: scale(1.3);
+	transition: all 0.5s ease-in-out;
+}
+.icon__image {
+	width: 40px;
+	height: 40px;
+}
+
+.main {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: #FFFFFF;
+	margin: 110px auto 0;
+}
+
+.map-block__content {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0 150px;
+}
+
+.map__title {
+	max-width: 600px;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 54px;
+	line-height: 66px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #20113D;
+}
+
+.map {
+	width: 1406px;
+	height: 912px;
+	margin: 70px 0 0;
+	background: url(../../assets/images/Map.png) center/cover no-repeat;
+	position: relative;
+}
+
+.map__location {
+	width: 100px;
+	height: 144px;
+	display: flex;
+
+	background: url(../../assets/icons/Tag\ orange.svg) center/100px 144px no-repeat;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+}
+
+.map__location:hover {
+	background: url(../../assets/icons/Tag\ white.svg) center/145px 200px no-repeat,
+	url(../../assets/icons/Tag\ border.svg) center/150px 200px no-repeat;
+	transition: all 0.5s ease-in-out;
+}
+
+.map__location_img {
+	width: 60px;
+	position: absolute;
+	top: 25px;
+	left: 18px;
+}
+
+.map__lemur .map__location_img {
+	width: 50px;
+	top: 13px;
+	left: 24px;
+}
+
+.map__panda .map__location_img,
+.map__tiger .map__location_img,
+.map__alligator .map__location_img,
+.map__eagle .map__location_img {
+	width: 70px;
+	top: 18px;
+	left: 14px;
+}
+
+.map__eagle {
+	position: absolute;
+	top: 44%;
+	left: 12%;
+}
+
+.map__alligator {
+	position: absolute;
+	top: 44%;
+	left: 21%;
+}
+
+.map__lion {
+	position: absolute;
+	top: 49%;
+	left: 41%;
+}
+
+.map__gorilla {
+	position: absolute;
+	top: 51%;
+	left: 49%;
+}
+
+.map__lemur {
+	position: absolute;
+	top: 65%;
+	left: 56%;
+}
+
+.map__panda {
+	position: absolute;
+	top: 38%;
+	left: 68%;
+}
+
+.map__tiger {
+	position: absolute;
+	top: 54%;
+	left: 72%;
+}
+
+.map__coala {
+	position: absolute;
+	top: 67%;
+	left: 81%;
+}
+
+
+.footer {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: #20113D;
+}
+
+.footer__content {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.footer__nav-block {
+	display: flex;
+	border-bottom: 1px solid #FFFFFF;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__partners {
+	display: flex;
+	margin: 80px 0;
+}
+.footer__partner:nth-child(2) {
+	margin: 0 65px;
+}
+.footer__partner img {
+	height: 50px;
+}
+
+.footer__list {
+	display: flex;
+}
+.footer__item {
+	margin: 0 23px;
+}
+.footer__item:first-child {
+	margin-left: 0;
+}
+.footer__item:last-child {
+	margin-right: 0;
+}
+
+.footer__link {
+	color: #FFFFFF;
+}
+.footer__link:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.footer__btn {
+	width: 359px;
+	height: 74px;
+	background: #20113D;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 26px 45px;
+
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.footer__btn:hover {
+	box-shadow: 5px 5px 20px #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+
+.footer__info-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer__copyrights {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__copyright {
+	color: #FFFFFF;
+}
+.footer__copyright:nth-child(2) {
+	margin: 0 50px;
+}
+
+.footer__info-block .icon__menu {
+	margin: 36px 0;
+}
+
