@@ -184,6 +184,7 @@ h1 {
 }
 
 .map__location:hover {
+	filter: drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));	
 	background: url(../../assets/icons/Tag\ white.svg) center/145px 200px no-repeat,
 	url(../../assets/icons/Tag\ border.svg) center/150px 200px no-repeat;
 	transition: all 0.5s ease-in-out;
