@@ -17,7 +17,7 @@
 <body>
 	<header class="header">
 		<div class="wrapper">
-			<h1>Online Zoo</h1>
+			<h1 class="header__heading">Online Zoo</h1>
 
 			<div class="header__content">
 				<a class="logo" href="../main/index.html">
@@ -73,14 +73,99 @@
 		</div>
 	</header>
 
+	<div class="sidebar__container">
+		<aside class="sidebar">
+			<div class="sidebar__live">
+				<div class="sidebar__live_block"> live
+					<img class="sidebar__live_icon" src="../../assets/icons/Camera.svg" alt="">
+				</div>
+				<img class="sidebar__live_arrow" src="../../assets/icons/dbl arrow.svg" alt="">
+			</div>
+
+			<ul class="sidebar__list">
+				<li class="sidebar__item">
+					<div class="sidebar__image-block sidebar__item_active">
+						<img class="sidebar__img" src="../../assets/icons/Gorilla.svg" alt="Animal icon"
+							title="Western lowland gorillas, Western Africa">
+					</div>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/panda.html">
+						<img class="sidebar__img" src="../../assets/icons/Panda.svg" alt="Animal icon"
+							title="Giant Panda, Eastern Asia">
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/lemur.html">
+						<img class="sidebar__img" src="../../assets/icons/Lemur.svg" alt="Animal icon"
+							title="Ring-Tailed Lemur, Southeast Asia">
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/eagle.html">
+						<img class="sidebar__img" src="../../assets/icons/Eagle.svg" alt="Animal icon"
+							title="Bald Eagle, Continental United States">
+					</a>
+				</li>
+			</ul>
+
+			<div class="sidebar__arrow_item"></div>
+		</aside>
+	</div>
+
 	<main class="main">
 
 		<section class="camera-block">
 			<div class="camera-block__content">
+				<div class="camera__heading">
+					<div class="camera__title block-title"> gorillas cams </div>
+					<button class="camera__btn"> Donate now
+						<img class="camera__btn_img" src="../../assets/icons/arrow.svg" alt="">
+					</button>
+				</div>
 
-				<img alt="Touch the animal">
+				<div class="camera__main_block">
+						<div class="camera__main_title"> Glen, Western lowland gorilla cam 1 </div>
+						<img class="logo__img" src="./../../assets/icons/Logo white.svg" alt="logo">
+						<iframe class="camera__main" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 
-				<div class="camera-block__container">
+				<div class="camera__more">
+					<div class="camera__more_title"> more live views </div>
+					 <div class="camera__more_content">
+						<button class="camera__more_btn btn-left"></button>
+
+						<div class="camera__more_container">
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 1 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/rgXWDk7rh4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 2 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/672cUSe69J0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 3 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<button class="camera__more_btn btn-right"></button>
+					 </div>
+
+					
 				</div>
 
 			</div>
