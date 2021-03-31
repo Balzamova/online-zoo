@@ -17,7 +17,7 @@
 <body>
 	<header class="header">
 		<div class="wrapper">
-			<h1>Online Zoo</h1>
+			<h1 class="header__heading">Online Zoo</h1>
 
 			<div class="header__content">
 				<a class="logo" href="../main/index.html">
@@ -45,7 +45,8 @@
 						</li>
 						</li>
 						<li class="header__item">
-							<a class="text__link" target="blank" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
+							<a class="text__link" target="blank"
+								href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
 						</li>
 					</ul>
 				</nav>
@@ -73,14 +74,98 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<div class="sidebar__container">
+		<aside class="sidebar">
+			<div class="sidebar__live">
+				<div class="sidebar__live_block"> live
+					<img class="sidebar__live_icon" src="../../assets/icons/Camera.svg" alt="">
+				</div>
+				<img class="sidebar__live_arrow" src="../../assets/icons/dbl arrow.svg" alt="">
+			</div>
 
+			<ul class="sidebar__list">
+				<li class="sidebar__item">
+					<div class="sidebar__image-block sidebar__item_active">
+						<img class="sidebar__img" src="../../assets/icons/Panda.svg" alt="Animal icon"
+							title="Giant Panda, Eastern Asia">
+					</div>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/eagle.html">
+						<img class="sidebar__img" src="../../assets/icons/Eagle.svg" alt="Animal icon"
+							title="Bald Eagle, Continental United States">
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/gorilla.html">
+						<img class="sidebar__img" src="../../assets/icons/Gorilla.svg" alt="Animal icon"
+							title="Western lowland gorillas, Western Africa">
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__image-block" href="../zoos/lemur.html">
+						<img class="sidebar__img" src="../../assets/icons/Lemur.svg" alt="Animal icon"
+							title="Ring-Tailed Lemur, Southeast Asia">
+					</a>
+				</li>
+			</ul>
+
+			<div class="sidebar__arrow_item"></div>
+		</aside>
+	</div>
+
+	<main class="main">
 		<section class="camera-block">
 			<div class="camera-block__content">
+				<div class="camera__heading">
+					<div class="camera__title block-title"> live panda cams </div>
+					<button class="camera__btn"> Donate now
+						<img class="camera__btn_img" src="../../assets/icons/arrow.svg" alt="">
+					</button>
+				</div>
 
-				<img alt="Touch the animal">
+				<div class="camera__main_block">
+						<div class="camera__main_title"> Lucas, the Giant Panda cam 1 </div>
+						<img class="logo__img" src="./../../assets/icons/Logo white.svg" alt="logo">
+						<iframe class="camera__main" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 
-				<div class="camera-block__container">
+				<div class="camera__more">
+					<div class="camera__more_title"> more live views </div>
+					 <div class="camera__more_content">
+						<button class="camera__more_btn btn-left"></button>
+
+						<div class="camera__more_container">
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 1 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/65JHo3Cy2tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 2 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+							<div class="camera__more_block">
+								<iframe class="camera__smal" src="https://www.youtube.com/embed/65JHo3Cy2tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__smal_block"> 
+									<div class="camera__smal_cam"> Cam 3 </div>
+										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+						<button class="camera__more_btn btn-right"></button>
+					 </div>
+
+					
 				</div>
 
 			</div>
@@ -91,9 +176,9 @@
 				<div class="donat-block__info">
 					<div class="donat-block__title"> make the Bamboo Donation! </div>
 					<div class="donat-block__subtitle">
-						Our process for bamboo donations first starts with a site evaluation. 
-						It is important that our team sees where the bamboo is growing, 
-						then determining if the bamboo is a species that our animals are 
+						Our process for bamboo donations first starts with a site evaluation.
+						It is important that our team sees where the bamboo is growing,
+						then determining if the bamboo is a species that our animals are
 						currently eating. Thank you for your interest in donating bamboo for our pandas.
 					</div>
 				</div>
@@ -110,7 +195,7 @@
 						</button>
 					</form>
 				</div>
-			</div>			
+			</div>
 		</section>
 
 		<section class="know-block">
@@ -119,9 +204,9 @@
 				<div class="know-block__header">
 					<div class="know-block__title block-title"> did you know? </div>
 					<div class="know-block__subtitle">
-						Pandas are often seen eating in a relaxed sitting posture, 
-						with their hind legs stretched out before them. They may 
-						appear sedentary, but they are skilled tree-climbers and 
+						Pandas are often seen eating in a relaxed sitting posture,
+						with their hind legs stretched out before them. They may
+						appear sedentary, but they are skilled tree-climbers and
 						efficient swimmers.
 					</div>
 				</div>
@@ -164,24 +249,22 @@
 				</div>
 
 				<div class="know-block__description info-text">
-					Giant pandas are very unusual animals that eat almost exclusively 
-					bamboo, which is very low in nutrients. Because of this, they have 
-					many unique adaptations for their low-energy lifestyle. Giant pandas 
-					are solitary. They have a highly developed sense of smell that males 
-					use to avoid each other and to find females for mating in the spring. 
-					After a five-month pregnancy, females give birth to a cub or two, 
-					though they cannot care for both twins. The blind infants weigh only 5 
-					ounces at birth and cannot crawl until they reach three months of age. 
-					They are born white, and develop their much loved coloring later. 
-					Habitat loss is the primary threat to this species. Its popularity 
-					around the world has helped the giant panda become the focus of 
+					Giant pandas are very unusual animals that eat almost exclusively
+					bamboo, which is very low in nutrients. Because of this, they have
+					many unique adaptations for their low-energy lifestyle. Giant pandas
+					are solitary. They have a highly developed sense of smell that males
+					use to avoid each other and to find females for mating in the spring.
+					After a five-month pregnancy, females give birth to a cub or two,
+					though they cannot care for both twins. The blind infants weigh only 5
+					ounces at birth and cannot crawl until they reach three months of age.
+					They are born white, and develop their much loved coloring later.
+					Habitat loss is the primary threat to this species. Its popularity
+					around the world has helped the giant panda become the focus of
 					successful conservation programs.
 				</div>
 
 			</div>
 		</section>
-
-
 	</main>
 
 	<footer class="footer">
