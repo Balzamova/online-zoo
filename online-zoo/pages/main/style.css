@@ -36,6 +36,10 @@ body {
 	width: 100%;
 	min-height: 100%;
 }
+body.lock {
+	overflow: hidden;
+}
+
 .header__heading {
 	opacity: 0;
 	position: absolute;
@@ -47,7 +51,6 @@ body {
 .header {
 	margin: 0 auto;
 	height: 0; 
-/*	z-index: 50; 	*/
 }
 
 .header .wrapper {
@@ -143,6 +146,96 @@ body {
 	background: #FFFFFF;
 	margin: 110px auto 0;
 }
+
+.modal__care,
+.modal__donat {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 5;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal__care_content {
+	width: 1160px;
+	height: 815px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.modal__care_img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.modal__care_icon {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+}
+.modal__care_icon:hover {
+	cursor: pointer;
+}
+
+.modal__care_title {
+	max-width: 678px;
+}
+
+.modal__care_subtitle {
+	max-width: 570px;
+	color: #000000;
+	margin: 30px auto 50px;
+}
+
+.modal__care_buttons {
+	margin: 0 auto 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+.modal__care_btn {
+	padding: 26px 45px;
+	background: #00A092;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+
+.modal__care_btn:hover {
+	background: #05786E;
+	box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+	transition: all 0.5s ease-in-out;
+}
+
 
 
 .watch-block__content,
