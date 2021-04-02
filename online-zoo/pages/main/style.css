@@ -236,12 +236,11 @@ body.lock {
 	transition: all 0.5s ease-in-out;
 }
 
-
 .modal__donat_first,
 .modal__donat_second,
 .modal__donat_third {
 	width: 920px;
-	height: 819px;
+	max-height: 819px;
 	background: #FFFFFF;
 	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
@@ -274,19 +273,26 @@ body.lock {
 	width: 100%;
 	font-weight: 600;
 	text-align: start;
-	padding: 0 120px 10px;
+	padding: 50px 120px 10px;
 	border-bottom: 1px solid #A4A8AE;
 }
 
 .modal__donat_main {
-	margin: 0 120px;	
-}
-
-.modal__donat__form {
+	margin: 40px 120px 50px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+}
+
+.modal__donat__form,
+.modal__donat_main-second {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	align-items: flex-start;
+	width: 100%;
+	height: 100%;
 }
 
 .form__choose {
@@ -321,7 +327,7 @@ body.lock {
 	transition: all 0.5s ease-in-out;
 }
 
-.form__button:active {
+.form__button.form__button-active {
 	background: #00A092;
 	box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
 	transition: all 0.5s ease-in-out;
@@ -333,6 +339,29 @@ body.lock {
 	border: 1px solid #000000;
 	box-sizing: border-box;
 	border-radius: 5px;
+
+	padding: 20px 30px;
+}
+
+.form__input::placeholder {
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 150%;
+	color: #969696;
+}
+
+.form__input-long {
+	width: 680px;
+	height: 60px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 16px 0 16px 20px;
+	margin-bottom: 50px;
+}
+
+.form__input-long:first-child {
+	margin-bottom: 50px;
 }
 
 .form__select {
@@ -341,12 +370,17 @@ body.lock {
 	border: 1px solid #000000;
 	box-sizing: border-box;
 	border-radius: 5px;
-	padding: 20px 105px;
+	padding: 20px 50px;
 
 	font-family: Montserrat;
 	font-size: 18px;
 	line-height: 150%;
 	color: #A4A8AE;
+}
+
+.form__select_option:not(:checked) {
+	padding: 20px 105px;  
+	color: #000000;
 }
 
 .form__checkbox {
@@ -359,13 +393,11 @@ body.lock {
 }
 
 .modal__donat_footer {
-	padding: 0 120px 50px;
+	margin: 50px auto 0;	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	
-
 }
 
 .modal__donat_steps {
@@ -373,7 +405,8 @@ body.lock {
 	height: 10px;
 }
 
-.modal__donat_next {
+.modal__donat_next,
+.modal__donat_back {
 	padding: 26px 55px;
 	width: 200px;
 	height: 74px;
@@ -399,6 +432,85 @@ body.lock {
 	box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
 	transition: all 0.5s ease-in-out;
 }
+
+.modal__donat_back {
+	background: transparent;
+	color: #00A092;
+	margin: 0 16px 0 53px;
+	padding: 26px 75px;
+	transition: all 0.5s ease-in-out;
+}
+
+.modal__donat_back:hover {
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid #00A092;
+	transition: all 0.5s ease-in-out;
+}
+
+.modal__donat_second-info {
+	text-align: start;
+	margin-top: -40px;
+	width: 680px;
+	height: 54px;
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 150%;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.form__input:focus,
+.form__input-long:focus,
+.form__textarea:focus,
+.form__select:focus {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 30px rgba(0, 160, 146, 0.3);
+}
+
+.form__label_card-number {
+	display: flex;
+	text-align: start;
+	margin-bottom: 50px;
+}
+
+.form__label_card-num {
+	margin-right: 40px;
+}
+
+.form__input-num {
+	width: 442px;
+}
+
+.form__input-cvv {
+	width: 198px;
+}
+
+.form__label_card {
+	display: flex;
+	flex-direction: column;
+	text-align: start;	
+	margin-bottom: 40px;
+}
+
+.form__label_card-info {
+	display: flex;	
+}
+
+.form__select-month,
+.form__select-year {
+	width: 201px;
+	height: 65px;
+	margin: 10px 40px 0 0;
+	padding: 20px 55px;
+	border-radius: 5px;
+	border: 1px solid #000000;
+
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 150%;
+	color: #A4A8AE;
+}
+
 
 
 
@@ -614,6 +726,9 @@ body.lock {
 	color: #FFFFFF;
 }
 
+.form__input,
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button,
 .donat__input,
 .donat__input::-webkit-outer-spin-button,
 .donat__input::-webkit-inner-spin-button {
