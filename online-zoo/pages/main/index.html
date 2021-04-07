@@ -31,27 +31,26 @@
 				<nav class="header__menu">
 					<ul class="header__list">
 						<li class="header__item">
-							<a class="header__item_active text__link" href="./index.html"> About </a>
+							<a class="header__link header__item_active text__link" href="./index.html"> About </a>
 						</li>
 						<li class="header__item">
-							<a class="text__link" href="../map/map.html"> Map </a>
+							<a class="header__link text__link" href="../map/map.html"> Map </a>
 						</li>
 						<li class="header__item">
-							<a class="text__link" href="../zoos/panda.html"> Zoos </a>
-						</li>
-						</li>
-						<li class="header__item">
-							<a class="text__link" href="./../contacts/contacts.html"> Contact us </a>
+							<a class="header__link text__link" href="../zoos/panda.html"> Zoos </a>
 						</li>
 						</li>
 						<li class="header__item">
-							<a class="text__link" target="blank"
-								href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
+							<a class="header__link text__link" href="./../contacts/contacts.html"> Contact us </a>
+						</li>
+						</li>
+						<li class="header__item">
+							<a class="header__link text__link" target="blank" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
 						</li>
 					</ul>
 				</nav>
 
-				<nav class="icon__menu">
+				<nav class="header__icon__menu">
 					<ul class="icon__list">
 						<li class="icon__item">
 							<a class="icon__link" href="https://www.youtube.com/" target="blank">
@@ -92,10 +91,7 @@
 					<button class="modal__care_btn"> $ 100 </button>
 					<button class="modal__care_btn"> Other amount </button>
 				</div>
-
 			</div>
-
-
 		</section>
 
 		<section class="modal__donat non-active" id="modal__donat">
@@ -116,8 +112,8 @@
 							<button class="form__button"> $ 100 </button>
 						</div>
 						<div class="form__label info-text">
-							<button class="form__button form__button-active"> other amount </button>
-							<input class="form__input info-text" type="number">
+							<button class="form__button form__button-active" id="other-amount"> other amount </button>
+							<input class="form__input_num info-text" disabled type="number">
 						</div>
 
 						<div class="form__label info-text">
@@ -134,11 +130,10 @@
 						</div>
 
 					</div>
-
 				
 				<div class="modal__donat_footer">
 					<img class="modal__donat_steps" src="../../assets/icons/steps 1.svg" alt="">
-					<button class="modal__donat_next"> next </button>
+					<button class="modal__donat_next" id="btn-first-next" type="submit"> next </button>
 				</div>
 			</div>
 			</div>
@@ -151,10 +146,10 @@
 				<div class="modal__donat_main">
 					<form class="modal__donat_main-second">
 						<p class="form__choose info-text"><span>*</span> Your Name </p>
-						<input class="form__input-long info-text" required type="text" placeholder="First and last name">
+						<input class="form__input-long info-text" data-type="input-second" required type="text" placeholder="First and last name">
 
 						<p class="form__choose info-text"><span>*</span> Your Email Address </p>
-						<input class="form__input-long info-text" type="email" required placeholder="Enter your email">
+						<input class="form__input-long info-text" data-type="input-second" type="email" required placeholder="Enter your email">
 					
 						<span class="modal__donat_second-info"> You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
 								translations. You can unsubscribe at any time.
@@ -162,8 +157,8 @@
 
 						<div class="modal__donat_footer">
 							<img class="modal__donat_steps" src="../../assets/icons/steps 2.svg" alt=""/>
-							<button class="modal__donat_back"> Back </button>
-							<button class="modal__donat_next"> next </button>
+							<button class="modal__donat_back" id="btn-second-back"> Back </button>
+							<button class="modal__donat_next" id="btn-second-next" type="submit"> next </button>
 						</div>
 					</form>
 				</div>
@@ -178,18 +173,18 @@
 						<div class="form__label_card-number">
 							<div class="form__label_card-num">
 								<p class="form__choose info-text"><span>*</span> Credit Card Number </p>
-								<input class="form__input form__input-num info-text" required type="number">
+								<input class="form__input form__input-num info-text" data-type="form-third" required type="number">
 							</div>
 							<div class="form__label_card-cvv">
 								<p class="form__choose info-text"><span>*</span> CVV Number </p>
-								<input class="form__input form__input-cvv info-text" required type="number">
+								<input class="form__input form__input-cvv info-text" data-type="form-third" required type="number">
 							</div>
 						</div>
 						
 						<div class="form__label_card ">
 							<p class="form__choose info-text"><span>*</span> Expiration Date </p>
 							<div class="form__label_card-info">
-								<select class="form__select form__select-month" required name="" id="">
+								<select class="form__select form__select-month" data-type="form-third" required>
 									<option class="form__select_option" value=""> Month </option>
 									<option class="form__select_option" value=""> 01 </option>
 									<option class="form__select_option" value=""> 02 </option>
@@ -204,7 +199,7 @@
 									<option class="form__select_option" value=""> 11 </option>
 									<option class="form__select_option" value=""> 12 </option>
 								</select>
-								<select class="form__select form__select-year" required name="" id="">
+								<select class="form__select form__select-year" data-type="form-third" required>
 									<option class="form__select_option" value=""> Year </option>
 									<option class="form__select_option" value=""> 2021 </option>
 									<option class="form__select_option" value=""> 2022 </option>
@@ -218,10 +213,21 @@
 				
 						<div class="modal__donat_footer">
 							<img class="modal__donat_steps" src="../../assets/icons/steps 3.svg" alt="">
-							<button class="modal__donat_back"> Back </button>
-							<button class="modal__donat_next"> next </button>
+							<button class="modal__donat_back" id="btn-third-back"> Back </button>
+							<button class="modal__donat_next" id="btn-third-next" type="submit"> next </button>
 						</div>
 					</form>
+				</div>
+			</div>
+
+			<div class="modal__donat_fourth non-active">
+				<div class="block-title"> we thank you for your donation </div>
+
+				<img class="modal__donat_fourth-img" src="../../assets/icons/panda thanks.svg" alt=""/>
+					
+				<div class="modal__donat_footer">
+					<button class="modal__donat_last" id="btn-fourth-close"> Back to main page </button>
+					<a class="modal__donat_last" href="../map/map.html"> Go to map page </a>
 				</div>
 			</div>
 
@@ -294,7 +300,7 @@
 					<form class="donat__donate">
 						<div class="donat__container">
 							<span> $ </span>
-							<input class="donat__input" type="number" placeholder="Donation Amount">
+							<input class="donat__input" type="number" maxlength="4" placeholder="Donation Amount">
 						</div>
 						<button class="donat__btn">
 							<img class="img-arrow" src="../../assets/icons/arrow.svg" alt="">
@@ -611,8 +617,8 @@
 			<section class="footer__nav-block">
 				<ul class="footer__partners">
 					<li class="footer__partner">
-						<a href="./index.html">
-							<img src="../../assets/icons/Logo white.svg" title="Online Zoo">
+						<a class="logo" href="../main/index.html">
+							<img class="logo__img" src="./../../assets/icons/Logo white.svg" title="Online Zoo" alt="logo">
 						</a>
 					</li>
 					<li class="footer__partner">
@@ -626,7 +632,7 @@
 				<nav class="footer__menu">
 					<ul class="footer__list">
 						<li class="footer__item">
-							<a class="text__link footer__link" href="./index.html"> About </a>
+							<a class="text__link footer__link" href="../main/index.html"> About </a>
 						</li>
 						<li class="footer__item">
 							<a class="text__link footer__link" href="../map/map.html"> Map </a>
@@ -644,12 +650,16 @@
 				<button class="footer__btn"> donate for volunteers </button>
 			</section>
 
+			<div class="footer__border"></div>
+
 			<section class="footer__info-block">
 				<ul class="footer__copyrights">
 					<li class="footer__copyright info-text"> © 2021 DinaK </li>
 					<li class="footer__copyright info-text"> © Yem Digital </li>
 					<li class="footer__copyright info-text"> © RSSchool </li>
 				</ul>
+
+				<div class="footer__border-second"></div>
 
 				<nav class="icon__menu">
 					<ul class="icon__list">
@@ -675,6 +685,7 @@
 	</footer>
 
 	<script src="script.js"></script>
+	<script src="modal.js"></script>
 </body>
 
 </html>
