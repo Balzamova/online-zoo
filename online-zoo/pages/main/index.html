@@ -9,7 +9,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 	<link rel="shortcut icon" href="./../../assets/icons/Favicon.svg">
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="modal.css"/>
 
 	<title>Online Zoo</title>
 </head>
@@ -74,164 +75,6 @@
 	</header>
 
 	<main class="main">
-
-		<section class="modal__care non-active" id="modal__care">
-			<div class="modal__care_content">
-				<img class="modal__care_icon" src="../../assets/icons/cross.svg" alt="">
-				<img class="modal__care_img" src="../../assets/images/image 129.png" alt="">
-				<div class="modal__care_title block-title"> together we care, save and protect! </div>
-				<div class="modal__care_subtitle info-text"> Your most generous gift not only cares for countless animals, but
-					it also offers hope and a vital lifeline to the world’s most endangered wildlife relying on us to survive.
-				</div>
-				<div class="modal__care_buttons">
-					<button class="modal__care_btn"> $ 20 </button>
-					<button class="modal__care_btn"> $ 30 </button>
-					<button class="modal__care_btn"> $ 50 </button>
-					<button class="modal__care_btn"> $ 80 </button>
-					<button class="modal__care_btn"> $ 100 </button>
-					<button class="modal__care_btn"> Other amount </button>
-				</div>
-			</div>
-		</section>
-
-		<section class="modal__donat non-active" id="modal__donat">
-			<div class="modal__donat_first non-active">
-				<div class="modal__donat_header"> make your donation </div>
-				<div class="modal__donat_heading info-text"> Donation Information:
-				</div>
-
-				<div class="modal__donat_main">
-					<div class="modal__donat__form form">
-						<p class="form__choose info-text"><span>*</span> Choose your donation amount: </p>
-						<div class="form__label info-text">
-							<button class="form__button"> $ 10 </button>
-							<button class="form__button"> $ 20 </button>
-							<button class="form__button"> $ 30 </button>
-							<button class="form__button"> $ 50 </button>
-							<button class="form__button"> $ 80 </button>
-							<button class="form__button"> $ 100 </button>
-						</div>
-						<div class="form__label info-text">
-							<button class="form__button form__button-active" id="other-amount"> other amount </button>
-							<input class="form__input_num info-text" disabled type="number">
-						</div>
-
-						<div class="form__label info-text">
-							<button class="form__button"> for special pet </button>
-							<select class="form__select" name="" id="">
-								<option class="form__select_option" value=""> Choose your favourite </option>
-								<option class="form__select_option" value=""> animal 1 </option>
-								<option class="form__select_option" value=""> animal 2 </option>
-							</select>
-						</div>
-						<div class="form__label info-text">
-							<input class="form__checkbox info-text" type="checkbox">
-							<span class="form__make info-text"> Make this a monthly recurring gift </span>
-						</div>
-
-					</div>
-				
-				<div class="modal__donat_footer">
-					<img class="modal__donat_steps" src="../../assets/icons/steps 1.svg" alt="">
-					<button class="modal__donat_next" id="btn-first-next" type="submit"> next </button>
-				</div>
-			</div>
-			</div>
-
-			<div class="modal__donat_second non-active">
-				<div class="modal__donat_header"> make your donation </div>
-				<div class="modal__donat_heading info-text"> Billing Information:
-				</div>
-
-				<div class="modal__donat_main">
-					<form class="modal__donat_main-second">
-						<p class="form__choose info-text"><span>*</span> Your Name </p>
-						<input class="form__input-long info-text" data-type="input-second" required type="text" placeholder="First and last name">
-
-						<p class="form__choose info-text"><span>*</span> Your Email Address </p>
-						<input class="form__input-long info-text" data-type="input-second" type="email" required placeholder="Enter your email">
-					
-						<span class="modal__donat_second-info"> You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
-								translations. You can unsubscribe at any time.
-						</span>
-
-						<div class="modal__donat_footer">
-							<img class="modal__donat_steps" src="../../assets/icons/steps 2.svg" alt=""/>
-							<button class="modal__donat_back" id="btn-second-back"> Back </button>
-							<button class="modal__donat_next" id="btn-second-next" type="submit"> next </button>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="modal__donat_third non-active">
-				<div class="modal__donat_header"> make your donation </div>
-				<div class="modal__donat_heading info-text"> Payment Information:</div>
-
-				<div class="modal__donat_main">
-					<form class="modal__donat__form form">
-						<div class="form__label_card-number">
-							<div class="form__label_card-num">
-								<p class="form__choose info-text"><span>*</span> Credit Card Number </p>
-								<input class="form__input form__input-num info-text" data-type="form-third" required type="number">
-							</div>
-							<div class="form__label_card-cvv">
-								<p class="form__choose info-text"><span>*</span> CVV Number </p>
-								<input class="form__input form__input-cvv info-text" data-type="form-third" required type="number">
-							</div>
-						</div>
-						
-						<div class="form__label_card ">
-							<p class="form__choose info-text"><span>*</span> Expiration Date </p>
-							<div class="form__label_card-info">
-								<select class="form__select form__select-month" data-type="form-third" required>
-									<option class="form__select_option" value=""> Month </option>
-									<option class="form__select_option" value=""> 01 </option>
-									<option class="form__select_option" value=""> 02 </option>
-									<option class="form__select_option" value=""> 03 </option>
-									<option class="form__select_option" value=""> 04 </option>
-									<option class="form__select_option" value=""> 05 </option>
-									<option class="form__select_option" value=""> 06 </option>
-									<option class="form__select_option" value=""> 07 </option>
-									<option class="form__select_option" value=""> 08 </option>
-									<option class="form__select_option" value=""> 09 </option>
-									<option class="form__select_option" value=""> 10 </option>
-									<option class="form__select_option" value=""> 11 </option>
-									<option class="form__select_option" value=""> 12 </option>
-								</select>
-								<select class="form__select form__select-year" data-type="form-third" required>
-									<option class="form__select_option" value=""> Year </option>
-									<option class="form__select_option" value=""> 2021 </option>
-									<option class="form__select_option" value=""> 2022 </option>
-									<option class="form__select_option" value=""> 2023 </option>
-									<option class="form__select_option" value=""> 2024 </option>
-									<option class="form__select_option" value=""> 2025 </option>
-									<option class="form__select_option" value=""> 2026 </option>
-								</select>
-							</div>
-						</div>
-				
-						<div class="modal__donat_footer">
-							<img class="modal__donat_steps" src="../../assets/icons/steps 3.svg" alt="">
-							<button class="modal__donat_back" id="btn-third-back"> Back </button>
-							<button class="modal__donat_next" id="btn-third-next" type="submit"> next </button>
-						</div>
-					</form>
-				</div>
-			</div>
-
-			<div class="modal__donat_fourth non-active">
-				<div class="block-title"> we thank you for your donation </div>
-
-				<img class="modal__donat_fourth-img" src="../../assets/icons/panda thanks.svg" alt=""/>
-					
-				<div class="modal__donat_footer">
-					<button class="modal__donat_last" id="btn-fourth-close"> Back to main page </button>
-					<a class="modal__donat_last" href="../map/map.html"> Go to map page </a>
-				</div>
-			</div>
-
-		</section>
 
 		<section class="watch-block">
 			<div class="watch-block__content">
@@ -413,7 +256,7 @@
 
 				<div class="feed-block__title block-title"> Pay and feed </div>
 
-				<section class="feed-block__section">
+				<div class="feed-block__section">
 					<div class="feed-block__first">
 						<div class="feed-block__number"> 1 </div>
 						<div class="feed-block__border"></div>
@@ -438,9 +281,9 @@
 						</div>
 
 					</div>
-				</section>
+				</div>
 
-				<section class="feed-block__section">
+				<div class="feed-block__section">
 					<div class="feed-block__first">
 						<div class="feed-block__number"> 2 </div>
 						<div class="feed-block__border"></div>
@@ -461,9 +304,9 @@
 						</div>
 
 					</div>
-				</section>
+				</div>
 
-				<section class="feed-block__section">
+				<div class="feed-block__section">
 					<div class="feed-block__first">
 						<div class="feed-block__number"> 3 </div>
 						<div class="feed-block__border"></div>
@@ -484,8 +327,7 @@
 						</div>
 
 					</div>
-				</section>
-
+				</div>
 
 				<button class="feed-block__button"> donate now
 					<img class="img-arrow" src="../../assets/icons/arrow.svg" alt="">
@@ -573,34 +415,38 @@
 
 					<a class="care-block__card" href="../zoos/panda.html">
 						<img class="cardsholder__image" src="../../assets/images/image panda.png" alt="Panda">
-						<p class="cardsholder__info"> Your $30 could give Lucas a slice of panda cake,
-							made with our secret recipe.
-						</p>
-						<button class="cardsholder__button"> feed </button>
+						<div class="cardsholder__info">
+							<p class="cardsholder__text"> Your $30 could give Lucas a slice of panda cake,
+								made with our secret recipe. </p>
+							<button class="cardsholder__button"> feed </button>
+						</div>
 					</a>
 
 					<a class="care-block__card" href="./error.html">
 						<img class="cardsholder__image" src="../../assets/images/image tiger.png" alt="Tiger">
-						<p class="cardsholder__info"> Your $150 will help to care for Senja, a
-							Sumatran tiger, for three weeks.
-						</p>
-						<button class="cardsholder__button"> feed </button>
+						<div class="cardsholder__info">
+							<p class="cardsholder__text"> Your $150 will help to care for Senja, a
+								Sumatran tiger, for three weeks.</p>
+							<button class="cardsholder__button"> feed </button>
+						</div>
 					</a>
 
 					<a class="care-block__card" href="../zoos/lemur.html">
 						<img class="cardsholder__image" src="../../assets/images/image lemur.png" alt="Lemur">
-						<p class="cardsholder__info"> With your support, we can give Andy his favorite fruits.
-							Especially when it's not fruit season in its natural habitat.
-						</p>
-						<button class="cardsholder__button"> feed </button>
+						<div class="cardsholder__info">
+							<p class="cardsholder__text"> With your support, we can give Andy his favorite fruits.
+								Especially when it's not fruit season in its natural habitat.	</p>
+							<button class="cardsholder__button"> feed </button>
+						</div>
 					</a>
 
 					<a class="care-block__card" href="../zoos/eagle.html">
 						<img class="cardsholder__image" src="../../assets/images/image eagles.png" alt="Eagles">
-						<p class="cardsholder__info"> Sam & Lora have hatched and raised numerous young and
-							will be happy with your help.
-						</p>
-						<button class="cardsholder__button"> feed </button>
+						<div class="cardsholder__info">
+							<p class="cardsholder__text"> Sam & Lora have hatched and raised numerous young and
+								will be happy with your help. </p>
+							<button class="cardsholder__button"> feed </button>
+						</div>
 					</a>
 				</div>
 
