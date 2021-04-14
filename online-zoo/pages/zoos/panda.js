@@ -1,28 +1,54 @@
-/*
-.info-text {
-	font-family: Montserrat;
-	font-size: 18px;
-	line-height: 150%;
-	color: #000000;
+/* Burger Menu */
+document.querySelector('.header__burger').onclick = function () {
+  document.querySelector('.header__burger').classList.toggle('active');
+  document.querySelector('.header__menu').classList.toggle('active');
+	document.querySelector('body').classList.toggle('lock');
 }
 
-.block-title {
-	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 54px;
-	line-height: 66px;
-	text-transform: uppercase;
-	color: #00A092;
+/* Functions for toggle sidebar*/
+const arrowBtn = document.querySelector('.sidebar__live_arrow');
+const sidebar = document.querySelector('.sidebar');
+const sidebarLive = document.querySelector('.sidebar__live_block');
+const sidebarOpenMain = document.querySelector('.sidebar__open-main');
+const sidebarCircle = document.querySelectorAll('.sidebar__circle');
+const sidebarBigBar = document.querySelectorAll('.sidebar__open');
+const sidebarText = document.querySelectorAll('.sidebar__open_text');
+
+const toggleSidebar = () => {
+	sidebar.classList.toggle('active');
+	arrowBtn.classList.toggle('active');
+	sidebarLive.classList.toggle('open');
+
+	sidebarCircle.forEach(item => {
+		item.classList.toggle('close');
+	})
+	
+	sidebarBigBar.forEach(item => {
+		item.classList.toggle('close');
+	})
+
+	sidebarText.forEach(item => {
+		item.classList.toggle('close');
+	})
 }
 
-.img-arrow {
-	width: 24.28px;
-	height: 22px;
-	margin-left: 10px;
-}
+arrowBtn.addEventListener('click', toggleSidebar);
+sidebarOpenMain.addEventListener('click', toggleSidebar);
 
+/* Input settings */
 
-	transition: all 0.5s ease-in-out;
+const form = document.querySelector('.donat__donate');
+const donatInput = document.querySelector('.donat__input');
+const submitBtn = document.querySelector('.donat__btn');
 
+form.addEventListener('submit', (event)=> {
+	event.preventDefault();
+})
 
-*/
+donatInput.addEventListener('input', ()=> {
+	const value = donatInput.value;
+	
+	if (value.length > donatInput.maxLength){
+		donatInput.value = value.slice(0, donatInput.maxLength);
+	}
+})
