@@ -474,10 +474,16 @@ body {
 }
 
 @media (min-width: 640px) and (max-width: 1199px) {
+	.header .wrapper {
+		align-items: center;
+	}
 	.header__content {
-		width: 600px;
-		padding: 0;
-		justify-content: space-between;
+		position: fixed;
+		height: 110px;
+		background: #F58021;
+		width: 100%;
+		justify-content: center;
+		z-index: 10;
 	}
 
 	.header__menu,
@@ -495,7 +501,7 @@ body {
 		width: 30px;
 		height: 22px;
 		z-index: 4;
-		margin-right: 20px;
+		margin: 0 0 0 450px;
 	}
 	.header__burger:hover {
 			cursor: pointer;
@@ -761,10 +767,16 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 639px) {
+	.header .wrapper {
+		align-items: center;
+	}
 	.header__content {
-		width: 280px;
-		padding: 0;
-		justify-content: space-between;
+		position: fixed;
+		height: 110px;
+		background: #F58021;
+		width: 100%;
+		justify-content: center;
+		z-index: 12;
 	}
 
 	.header__menu,
@@ -782,7 +794,7 @@ body {
 		width: 30px;
 		height: 22px;
 		z-index: 4;
-		margin-right: 20px;
+		margin: 0 0 0 170px;
 	}
 
 	.header__burger:hover {
@@ -1093,10 +1105,16 @@ body {
 }
 
 @media (max-width: 320px) {
+	.header .wrapper {
+		align-items: center;
+	}
 	.header__content {
-		width: 280px;
-		padding: 0;
-		justify-content: space-between;
+		position: fixed;
+		height: 110px;
+		background: #F58021;
+		width: 100%;
+		justify-content: center;
+		z-index: 12;
 	}
 
 	.header__menu,
@@ -1114,7 +1132,7 @@ body {
 		width: 30px;
 		height: 22px;
 		z-index: 4;
-		margin-right: 20px;
+		margin: 0 0 0 170px;
 	}
 
 	.header__burger:hover {
