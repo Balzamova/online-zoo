@@ -170,3 +170,38 @@ const switchDots = (currentCard) => {
 }
 
 switchDots(currentCard);
+
+/* Care Block Dots*/
+
+const careBlockCardsholder = document.querySelector('.care-block__cardsholder');
+const careBlockCard = document.querySelectorAll('.care-block__card');
+const careBlockDots = document.querySelector('.care-block__dots');
+const careBlockDot = document.querySelectorAll('.care-block__dot');
+const careCardsMargin = 10;
+let dotIndex = 0;
+
+const checkDotIndex = (e) => {
+	let index = 0;
+
+	for (let i = 0; i < careBlockDot.length; i++) {
+		let ind = e.target;
+		if (ind === careBlockDots.children[i]) index = i;
+	}
+
+	switchCard(index);
+}
+
+const switchCard = (i) => {
+	let cardWidth = careBlockCard[i].offsetWidth;
+	careBlockCardsholder.style.left = `calc(-${(cardWidth + careCardsMargin) * i}px)`;
+}
+
+careBlockDots.addEventListener('click', (e) => {
+	careBlockDot.forEach(dot => {
+		dot.classList.remove('active');
+	})
+
+	e.target.classList.add('active');
+
+	checkDotIndex(e);
+})
