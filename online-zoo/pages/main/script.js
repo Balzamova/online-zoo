@@ -144,3 +144,29 @@ const delayAutoSliding = () => {
 }
 
 usersCarousel.addEventListener('click', delayAutoSliding);
+
+/* User Block Dots */
+
+const usersDots = document.querySelector('.users-block__dots');
+
+const addUserDots = () => {
+	for (let i = 0; i < usersCardsLength; i++) {
+		usersDots.insertAdjacentHTML('afterbegin', `
+			<div class="users-block__dot"></div>
+	`);
+	}
+}
+
+addUserDots();
+
+const usersDot = document.querySelectorAll('.users-block__dot');
+
+const switchDots = (currentCard) => {
+	usersDot.forEach(dot => {
+		dot.classList.remove('active');
+	});
+
+	usersDot[currentCard].classList.add('active');
+}
+
+switchDots(currentCard);
