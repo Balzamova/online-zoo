@@ -241,8 +241,8 @@ export function modalControl (event, value) {
 					<img class="modal__fourth-img" src="../../assets/icons/panda thanks.svg" alt=""/>
 						
 					<div class="modal-window_footer">
-						<button class="modal-window_last" id="btn-fourth-close"> Back to main page </button>
-						<a class="modal-window_last" href="../map/map.html"> Go to map page </a>
+						<button class="modal-window_last" id="btn-fourth-close"> To main page </button>
+						<a class="modal-window_last" href="../map/map.html"> To map page </a>
 					</div>
 				</div>
 			</div>
@@ -589,7 +589,7 @@ export function modalControl (event, value) {
 		} else {
 			return false;
 		}
-		}
+	}
 
 	function ThirdWindowHandler() {
 		let numberValid = false;
@@ -683,7 +683,7 @@ export function modalControl (event, value) {
 
 	document.querySelector('#btn-third-complete').addEventListener('click', ThirdWindowHandler);
 
-	/* Modal donation window. Part 4*/
+	/* Modal donation window - 4*/
 
 	document.querySelector('#btn-fourth-close').addEventListener('click', closePayModalWindow);
 

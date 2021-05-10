@@ -573,6 +573,10 @@
 
 .form__input-num {
 	width: 442px;
+	color: grey;
+}
+.form__input-num {
+	z-index: 50;
 }
 
 .form__input-cvv {
@@ -888,6 +892,7 @@
 		gap: 20px;
 		width: 100%;
 		margin: 0 0 30px 0;
+		position: relative;
 	}
 	
 	.form__label_card-num {
@@ -901,11 +906,19 @@
 	
 	.modal-window_footer:last-child {
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
 	}
 
 	.modal-window_footer {
 		margin-top: 30px;
+	}
+
+	.modal__fourth {
+    padding: 30px 0 0 0;
+	}
+
+	.modal__fourth_title {
+		font-size: 38px;
 	}
 
 	.modal-window_complete {
@@ -913,10 +926,25 @@
 		width: 290px;
 		height: 74px;
 		background: #F58021;
+		font-size: 16px;
 	}
+
+	.modal__fourth-img {
+		width: 250px;
+    height: 250px;
+		margin-bottom: 0;
+	}
+
+	.modal-window_last {
+		padding: 0;
+    width: 200px;
+    height: 54px;
+	}
+
 	.modal-window_complete:hover {
-		background: #D26004;	
+		background: #D26004;
 	}
+	
 	.non-active {
 		width: 0;
 		height: 0;
