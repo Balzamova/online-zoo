@@ -10,6 +10,7 @@
 
 	<link rel="shortcut icon" href="./../../assets/icons/Favicon.svg">
 	<link rel="stylesheet" href="panda.css" />
+	<link rel="stylesheet" href="./../main/modal.css"/>
 
 	<title>Online Zoo</title>
 </head>
@@ -31,27 +32,31 @@
 				<nav class="header__menu">
 					<ul class="header__list">
 						<li class="header__item">
-							<a class="text__link" href="../main/index.html"> About </a>
+							<a class="header__link text__link" href="../main/index.html"> About </a>
 						</li>
 						<li class="header__item">
-							<a class="text__link" href="../map/map.html"> Map </a>
+							<a class="header__link text__link" href="../map/map.html"> Map </a>
 						</li>
 						<li class="header__item">
-							<a class="header__item_active text__link" href="./panda.html"> Zoos </a>
-						</li>
-						</li>
-						<li class="header__item">
-							<a class="text__link" href="./../contacts/contacts.html"> Contact us </a>
+							<a class="header__link header__item_active text__link" href="./panda.html"> Zoos </a>
 						</li>
 						</li>
 						<li class="header__item">
-							<a class="text__link" target="blank"
-								href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
+							<a class="header__link text__link" href="./../contacts/contacts.html"> Contact us </a>
+						</li>
+						</li>
+						<li class="header__item">
+							<a class="header__link text__link" target="blank" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"> Design </a>
+						</li>
+						<li class="header__item">
+							<div class="swither">
+								<div class="switcher__circle"></div>
+							</div>
 						</li>
 					</ul>
 				</nav>
 
-				<nav class="icon__menu">
+				<nav class="header__icon__menu">
 					<ul class="icon__list">
 						<li class="icon__item">
 							<a class="icon__link" href="https://www.youtube.com/" target="blank">
@@ -85,27 +90,76 @@
 
 			<ul class="sidebar__list">
 				<li class="sidebar__item">
-					<div class="sidebar__image-block sidebar__item_active">
-						<img class="sidebar__img" src="../../assets/icons/Panda.svg" alt="Animal icon"
-							title="Giant Panda, Eastern Asia">
-					</div>
-				</li>
-				<li class="sidebar__item">
-					<a class="sidebar__image-block" href="../zoos/eagle.html">
-						<img class="sidebar__img" src="../../assets/icons/Eagle.svg" alt="Animal icon"
-							title="Bald Eagle, Continental United States">
+					<a class="sidebar__circle sidebar__item_active ">
+						<img class="sidebar__img" src="../../assets/icons/Panda.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open sidebar__open-main close" href="#">
+						<img class="sidebar__open_img" src="../../assets/icons/Panda white.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Watch live from China's Panda Center  </div>
 					</a>
 				</li>
 				<li class="sidebar__item">
-					<a class="sidebar__image-block" href="../zoos/gorilla.html">
-						<img class="sidebar__img" src="../../assets/icons/Gorilla.svg" alt="Animal icon"
-							title="Western lowland gorillas, Western Africa">
+					<a class="sidebar__circle " href="../zoos/eagle.html">
+						<img class="sidebar__img" src="../../assets/icons/Eagle.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../zoos/eagle.html">
+						<img class="sidebar__open_img" src="../../assets/icons/Eagle orange.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Watch The Bald Eagles Nest from West End cam </div>
 					</a>
 				</li>
 				<li class="sidebar__item">
-					<a class="sidebar__image-block" href="../zoos/lemur.html">
-						<img class="sidebar__img" src="../../assets/icons/Lemur.svg" alt="Animal icon"
-							title="Ring-Tailed Lemur, Southeast Asia">
+					<a class="sidebar__circle " href="../zoos/gorilla.html">
+						<img class="sidebar__img" src="../../assets/icons/Gorilla.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../zoos/gorilla.html">
+						<img class="sidebar__open_img" src="../../assets/icons/Gorilla orange.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Livestream from Gorilla Forest Corridor habitat cam </div>
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__circle " href="../zoos/lemur.html">
+						<img class="sidebar__img" src="../../assets/icons/Lemur.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../zoos/lemur.html">
+						<img class="sidebar__open_img" src="../../assets/icons/Lemur orange.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> The ring-tailed lemurs play in Madagascar, Lemuria Land </div>
+					</a>
+				</li>
+
+				<li class="sidebar__item">
+					<a class="sidebar__circle" href="../main/error.html">
+						<img class="sidebar__img" src="../../assets/icons/Alligator.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open sidebar__open-main close" href="../main/error.html">
+						<img class="sidebar__open_img" src="../../assets/icons/crocodile black.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Watch crocodiles from St. Augustine's Park in Florida </div>
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__circle " href="../main/error.html">
+						<img class="sidebar__img" src="../../assets/icons/Lion.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../main/error.html">
+						<img class="sidebar__open_img" src="../../assets/icons/Lion-Outline.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Watch the Smithsonian's National Zoo's lions live </div>
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__circle " href="../main/error.html">
+						<img class="sidebar__img" src="../../assets/icons/tiger.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../main/error.html">
+						<img class="sidebar__open_img" src="../../assets/icons/tiger black.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Tiger Cam from San Diego Zoo Safari Park </div>
+					</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__circle " href="../main/error.html">
+						<img class="sidebar__img" src="../../assets/icons/Coala.svg" alt="Animal icon">
+					</a>
+					<a class="sidebar__open close" href="../main/error.html">
+						<img class="sidebar__open_img" src="../../assets/icons/coala black.svg" alt="Animal icon">
+						<div class="sidebar__open_text close"> Watch coala's life from Edinburgh Zoo's </div>
 					</a>
 				</li>
 			</ul>
@@ -115,12 +169,13 @@
 	</div>
 
 	<main class="main">
+		
 		<section class="camera-block">
 			<div class="camera-block__content">
 				<div class="camera__heading">
 					<div class="camera__title block-title"> live panda cams </div>
-					<button class="camera__btn"> Donate now
-						<img class="camera__btn_img" src="../../assets/icons/arrow.svg" alt="">
+					<button class="feed-block__button"> Donate now
+						<img class="feed-block__button_img" src="../../assets/icons/arrow.svg" alt="">
 					</button>
 				</div>
 
@@ -128,17 +183,36 @@
 						<div class="camera__main_title"> Lucas, the Giant Panda cam 1 </div>
 						<img class="logo__img" src="./../../assets/icons/Logo white.svg" alt="logo">
 						<div class="camera__main_hidden"></div>
-						<iframe class="camera__main" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="camera__main_wrapper">
+								<iframe class="camera__main" 
+									src="https://www.youtube.com/embed/yYp_Shk7XcI?controls=0&showinfo=0&mute=1&autoplay=0" 
+									title="YouTube video player" frameborder="0" 
+									allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen>
+							</iframe>
+						</div>
 				</div>
 
 				<div class="camera__more">
-					<div class="camera__more_title"> more live views </div>
+					<div class="camera__more_title"> More live views </div>
 					 <div class="camera__more_content">
 						<button class="camera__more_btn btn-left"></button>
 
 						<div class="camera__more_container">
+
 							<div class="camera__more_block">
-								<iframe class="camera__smal" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__more_hidden"></div>
+								<div class="camera__more_play">
+									<img src="../../assets/icons/path.svg" alt="icon">
+								</div>
+								<div class="camera__more_wrapper">
+									<iframe class="camera__smal" 
+										src="https://www.youtube.com/embed/D0eqnda8dOk?controls=0&showinfo=0&mute=1&autoplay=0" 
+										title="YouTube video player" frameborder="0" 
+										allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowfullscreen>
+									</iframe>
+								</div>
 								<div class="camera__smal_block"> 
 									<div class="camera__smal_cam"> Cam 1 </div>
 										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
@@ -146,7 +220,18 @@
 							</div>
 
 							<div class="camera__more_block">
-								<iframe class="camera__smal" src="https://www.youtube.com/embed/65JHo3Cy2tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__more_hidden"></div>
+								<div class="camera__more_play">
+									<img src="../../assets/icons/path.svg" alt="icon">
+								</div>
+								<div class="camera__more_wrapper">
+									<iframe class="camera__smal" 
+										src="https://www.youtube.com/embed/65JHo3Cy2tY?controls=0&showinfo=0&mute=1&autoplay=0" 
+										title="YouTube video player" frameborder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowfullscreen>
+								</iframe>
+								</div>
 								<div class="camera__smal_block"> 
 									<div class="camera__smal_cam"> Cam 2 </div>
 										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
@@ -154,13 +239,23 @@
 							</div>
 
 							<div class="camera__more_block">
-								<iframe class="camera__smal" src="https://www.youtube.com/embed/65JHo3Cy2tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class="camera__more_hidden"></div>
+								<div class="camera__more_play">
+									<img src="../../assets/icons/path.svg" alt="icon">
+								</div>
+								<div class="camera__more_wrapper">
+									<iframe class="camera__smal"
+										src="https://www.youtube.com/embed/OObOQ2GElhA?controls=0&showinfo=0&mute=1&autoplay=0" 
+										title="YouTube video player" frameborder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowfullscreen>
+									</iframe>
+								</div>
 								<div class="camera__smal_block"> 
 									<div class="camera__smal_cam"> Cam 3 </div>
 										<img class="camera__smal_img" src="../../assets/icons/Camera.svg" alt="">
 								</div>
 							</div>
-
 						</div>
 
 						<button class="camera__more_btn btn-right"></button>
@@ -189,9 +284,9 @@
 					<form class="donat__donate">
 						<div class="donat__container">
 							<span> $ </span>
-							<input class="donat__input" type="number" placeholder="Donation Amount">
+							<input class="donat__input" type="number" maxlength="4" placeholder="Donation Amount">
 						</div>
-						<button class="donat__btn">
+						<button class="donat__btn" type="submit">
 							<img class="img-arrow" src="../../assets/icons/arrow.svg" alt="">
 						</button>
 					</form>
@@ -240,7 +335,7 @@
 						</li>
 						<li class="know-block__item info-text last-item">
 							<span class="know-block__span"> Range: </span>
-							Eastern Asia
+							<span> Eastern Asia </span>							
 							<a class="know-block__button" href="../map/map.html"> view map </a>
 						</li>
 
@@ -273,7 +368,9 @@
 			<section class="footer__nav-block">
 				<ul class="footer__partners">
 					<li class="footer__partner">
-						<img src="../../assets/icons/Logo white.svg" title="Online Zoo">
+						<a class="logo" href="../main/index.html">
+							<img class="logo__img" src="./../../assets/icons/Logo white.svg" title="Online Zoo" alt="logo">
+						</a>
 					</li>
 					<li class="footer__partner">
 						<img src="../../assets/icons/Yem Digital.svg" title="Yem Digital">
@@ -292,7 +389,7 @@
 							<a class="text__link footer__link" href="../map/map.html"> Map </a>
 						</li>
 						<li class="footer__item">
-							<a class="text__link footer__link" href="./panda.html"> Zoos </a>
+							<a class="text__link footer__link" href="../zoos/panda.html"> Zoos </a>
 						</li>
 						</li>
 						<li class="footer__item">
@@ -304,12 +401,16 @@
 				<button class="footer__btn"> donate for volunteers </button>
 			</section>
 
+			<div class="footer__border"></div>
+
 			<section class="footer__info-block">
 				<ul class="footer__copyrights">
 					<li class="footer__copyright info-text"> © 2021 DinaK </li>
 					<li class="footer__copyright info-text"> © Yem Digital </li>
 					<li class="footer__copyright info-text"> © RSSchool </li>
 				</ul>
+
+				<div class="footer__border-second"></div>
 
 				<nav class="icon__menu">
 					<ul class="icon__list">
@@ -334,7 +435,8 @@
 		</div>
 	</footer>
 
-	<script src="./panda.js"></script>
+	<script src="./panda.js" type="module"></script>
+
 </body>
 
 </html>
