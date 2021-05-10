@@ -44,6 +44,22 @@ body {
 }
 
 /* -------------------- */ 
+.info-text {
+	font-family: Montserrat;
+	font-size: 18px;
+	line-height: 150%;
+	color: #000000;
+}
+
+.block-title {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 54px;
+	line-height: 66px;
+	text-transform: uppercase;
+	color: #00A092;
+}
+
 .header {
 	margin: 0 auto;
 	height: 0; 
@@ -767,6 +783,16 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 639px) {
+	.block-title.mobile {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color: #00A092;
+	}
+
 	.header .wrapper {
 		align-items: center;
 	}
@@ -1105,6 +1131,16 @@ body {
 }
 
 @media (max-width: 320px) {
+	.block-title.mobile {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 32px;
+		text-transform: uppercase;
+		color: #00A092;
+	}
+
 	.header .wrapper {
 		align-items: center;
 	}

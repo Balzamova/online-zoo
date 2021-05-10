@@ -137,3 +137,26 @@ function touch2Mouse(e) {
 
   e.preventDefault();
 }
+
+/* MODAL WINDOWS */
+
+import {modalControl} from './../main/modal.js'
+
+const feedBlockBtn = document.querySelector('.feed-block__button');
+const donatBlockBtn = document.querySelector('.donat__btn');
+const donatBlockAmount = document.querySelector('.donat__input');
+const footerBtn = document.querySelector('.footer__btn');
+
+donatBlockBtn.addEventListener('click', (event) => {
+	let value = donatBlockAmount.value;
+
+	modalControl(event, value);
+});
+
+feedBlockBtn.addEventListener('click', (event) => {
+	modalControl(event)
+});
+
+footerBtn.addEventListener('click', (event)=> {
+	modalControl(event)
+});

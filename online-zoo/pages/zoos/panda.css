@@ -373,7 +373,7 @@ body {
 	align-self: center;
 }
 
-.camera__btn {
+.feed-block__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
@@ -392,12 +392,12 @@ body {
 	color: #FFFFFF;
 	transition: all 0.5s ease-in-out;
 }
-.camera__btn:hover {
+.feed-block__button:hover {
 	background: #D26004;
 	transition: all 0.5s ease-in-out;
 }
 
-.camera__btn_img {
+.feed-block__button_img {
 	margin-left: 15px;
 }
 
@@ -1101,7 +1101,7 @@ body {
 		background: #F58021;
 		width: 100%;
 		justify-content: center;
-		z-index: 12;
+		z-index: 10;
 	}
 
 	.header__menu,
@@ -1307,7 +1307,7 @@ body {
 		line-height: 51px;
 	}
 
-	.camera__btn {
+	.feed-block__button {
 		position: absolute;
 		width: 212px;
 		height: 48px;
@@ -1504,7 +1504,7 @@ body {
 		background: #F58021;
 		width: 100%;
 		justify-content: center;
-		z-index: 12;
+		z-index: 10;
 	}
 
 	.header__menu,
@@ -1725,7 +1725,7 @@ body {
 		line-height: 32px;
 	}
 
-	.camera__btn {
+	.feed-block__button {
 		position: absolute;
 		width: 260px;
 		height: 45px;
@@ -2086,7 +2086,7 @@ body {
 		background: #F58021;
 		width: 100%;
 		justify-content: center;
-		z-index: 12;
+		z-index: 10;
 	}
 
 	.header__menu,
@@ -2307,7 +2307,7 @@ body {
 		line-height: 32px;
 	}
 
-	.camera__btn {
+	.feed-block__button {
 		position: absolute;
 		width: 260px;
 		height: 45px;

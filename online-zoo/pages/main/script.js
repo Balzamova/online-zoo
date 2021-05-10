@@ -8,7 +8,6 @@ document.querySelector('.header__burger').onclick = function () {
 /* Donation Form */
 const form = document.querySelector('.donat__donate');
 const donatInput = document.querySelector('.donat__input');
-const submitBtn = document.querySelector('.donat__btn');
 
 form.addEventListener('submit', (event)=> {
 	event.preventDefault();
@@ -178,7 +177,6 @@ const careBlockCard = document.querySelectorAll('.care-block__card');
 const careBlockDots = document.querySelector('.care-block__dots');
 const careBlockDot = document.querySelectorAll('.care-block__dot');
 const careCardsMargin = 10;
-let dotIndex = 0;
 
 const checkDotIndex = (e) => {
 	let index = 0;
@@ -205,3 +203,34 @@ careBlockDots.addEventListener('click', (e) => {
 
 	checkDotIndex(e);
 })
+
+/* MODAL WINDOWS */
+
+import {modalControl} from './modal.js'
+
+const feedBlockBtn = document.querySelector('.feed-block__button');
+const donatBlockBtn = document.querySelector('.donat__btn');
+const donatBlockAmount = document.querySelector('.donat__input');
+const cardsholderBtn = document.querySelectorAll('.cardsholder__button');
+const footerBtn = document.querySelector('.footer__btn');
+
+donatBlockBtn.addEventListener('click', (event) => {
+	let value = donatBlockAmount.value;
+
+	modalControl(event, value);
+});
+
+feedBlockBtn.addEventListener('click', (event) => {
+	modalControl(event)
+});
+
+cardsholderBtn.forEach(el => {
+	el.addEventListener('click', (event)=> {
+
+		modalControl(event)
+	});
+});
+
+footerBtn.addEventListener('click', (event)=> {
+	modalControl(event)
+});
