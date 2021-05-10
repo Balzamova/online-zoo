@@ -241,7 +241,7 @@ export function modalControl (event, value) {
 					<img class="modal__fourth-img" src="../../assets/icons/panda thanks.svg" alt=""/>
 						
 					<div class="modal-window_footer">
-						<button class="modal-window_last" id="btn-fourth-close"> To main page </button>
+						<a class="modal-window_last" href="../main/index.html"> To main page </a>
 						<a class="modal-window_last" href="../map/map.html"> To map page </a>
 					</div>
 				</div>
@@ -682,10 +682,6 @@ export function modalControl (event, value) {
 	});
 
 	document.querySelector('#btn-third-complete').addEventListener('click', ThirdWindowHandler);
-
-	/* Modal donation window - 4*/
-
-	document.querySelector('#btn-fourth-close').addEventListener('click', closePayModalWindow);
 
 	/* Close Modal Window */
 
