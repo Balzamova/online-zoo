@@ -4,6 +4,15 @@ document.querySelector('.header__burger').onclick = function () {
   document.querySelector('.header__menu').classList.toggle('active');
 	document.querySelector('body').classList.toggle('lock');
 }
+/* Check Switcher */
+const switcher = document.querySelector('.swither');
+const switcherCircle = document.querySelector('.switcher__circle');
+
+
+switcher.addEventListener('click', () => {
+	switcherCircle.classList.toggle('right');
+	document.querySelector('body').classList.toggle('green');
+})
 
 /* Donation Form */
 const form = document.querySelector('.donat__donate');

@@ -5,6 +5,16 @@ document.querySelector('.header__burger').onclick = function () {
 	document.querySelector('body').classList.toggle('lock');
 }
 
+/* Check Switcher */
+const switcher = document.querySelector('.swither');
+const switcherCircle = document.querySelector('.switcher__circle');
+
+
+switcher.addEventListener('click', () => {
+	switcherCircle.classList.toggle('right');
+	document.querySelector('body').classList.toggle('green');
+})
+
 /* Toggle sidebar*/
 const arrowBtn = document.querySelector('.sidebar__live_arrow');
 const sidebar = document.querySelector('.sidebar');

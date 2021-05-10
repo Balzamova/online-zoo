@@ -163,7 +163,7 @@ export function modalControl (event, value) {
 							<div class="form__label_card-number">
 								<div class="form__label_card-num">
 									<p class="form__choose info-text"><span>*</span> Credit Card Number </p>
-									<input class="form__input form__input-num info-text" data-type="form-third" type="text" maxlength="16">
+									<input class="form__input form__input-num info-text" data-type="form-third" type="number" maxlength="16">
 								</div>
 								<div class="form__label_card-cvv">
 									<p class="form__choose info-text"><span>*</span> CVV Number </p>
