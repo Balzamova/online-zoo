@@ -1,7 +1,5 @@
 # Online-zoo
 
-# Development with JS code script </br>
-
 ## Ready project: [link](https://balzamova.github.io/online-zoo/online-zoo/pages/main/)
 
 ### Used frameworks: </br>
