@@ -1,6 +1,6 @@
 # Online-zoo
 
-## Ready project: [link](https://balzamova.github.io/online-zoo/online-zoo/pages/main/)
+## Demo: [link](https://balzamova.github.io/online-zoo/online-zoo/pages/main/)
 
 ### Used frameworks: </br>
 1. **HTML**
